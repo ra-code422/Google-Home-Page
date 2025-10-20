@@ -37,7 +37,7 @@
 
 ## Structure du projet
 
-### Social proof
+### Google home page
 - index.html
 - style.css 
 - README.md 
