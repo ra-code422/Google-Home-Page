@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.contenaire {
+    width: 100rem;
+}
+
+.header ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    color: #70757a;
+    padding: 30px;
+    font-size: 16px;
+}
+
+#gmail {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+
+
+}
+
+.header #gmail:hover {
+    background-color: #f1f3f4;
+    border-radius: 5px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    margin: 5em;
+    gap: 10px;
+    font-weight: 800;
+    border: auto;
+}
+
+.section1 .google1,
+.google4 {
+    font-size: 120px;
+    color: #4285F4;
+}
+
+.google2,
+.google6 {
+    font-size: 120px;
+    color: #EA4335;
+}
+
+.google3 {
+    font-size: 120px;
+    color: #FBBC05;
+}
+
+.google5 {
+    font-size: 120px;
+    color: #34A853;
+}
+
+.section2 {
+    display: flex;
+    justify-content: center;
+}
+
+.section2 input {
+    width: 50em;
+    padding: 20px;
+    border-radius: 30px;
+    border: none;
+    border: solid rgb(234, 233, 233) 1px;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+.section2 input:focus {
+    box-shadow: 0 0 5px #0861f1ed;
+}
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#recherche,
+#chance {
+    background-color: #f1f3f4;
+    padding: 10px;
+    border-radius: 18px;
+    outline: none;
+}
+
+#recherche:hover,
+#chance:hover {
+    color: #34A853;
+    box-shadow: 0 0 5px #9f9fa5db;
+}
+
+.section4,
+.section5 {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #202124;
+}
+
+.section5 ul {
+    display: flex;
+    gap: 20px;
+    line-height: 30px;
+}
+
+#confidencialite {
+    list-style: none;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        height: 90rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:425px) {
+    body {
+        height: 100em;
+    }
+
+    .contenaire {
+        width: 100%;
+    }
+
+    .header ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section1 {
+        margin: 2em;
+    }
+
+    .section1 .google1,
+    .google4 {
+        font-size: 85px;
+    }
+
+    .google2,
+    .google6 {
+        font-size: 85px;
+    }
+
+    .google3 {
+        font-size: 85px;
+    }
+
+    .google5 {
+        font-size: 85px;
+    }
+
+    .section2 input {
+        width: 25em;
+        padding: 15px;
+    }
+
+    #recherche,
+    #chance {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    body {
+        height: 100em;
+    }
+
+    .contenaire {
+        width: 100%;
+    }
+    .section1 .google1,
+    .google4 {
+        font-size: 60px;
+    }
+
+    .google2,
+    .google6 {
+        font-size: 60px;
+    }
+
+    .google3 {
+        font-size: 60px;
+    }
+
+    .google5 {
+        font-size: 60px;
+    }
+
+    .section2 input {
+        width: 22em;
+        padding: 10px;
+    }
+
+    input::placeholder {
+        font-size: 14px;
+    }
+
+    #recherche,
+    #chance {
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    .section4,
+    .section5 {
+        font-size: 13px;
+    }
+
+}
